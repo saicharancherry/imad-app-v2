@@ -32,6 +32,7 @@ function htmlfunction(data)
     var date=data.date;
     var title=data.title;
     var content=data.content;
+    var heading=data.heading;
 var htmltemplate=`<html>
     <body>
         <link href='/ui/style.css' rel="stylesheet" />
@@ -42,14 +43,15 @@ ${title}
 <div class='container'>
     <a href="/">home</a>
     <hr/>
-    </div>
     <div>
         ${date}
         </div>
         <div>
         <h3>${heading}</h3>  
         </div>
+        <div>
 <h5><p> ${content}
+</div>
 </div>
 </body>
 </html>`;
@@ -62,7 +64,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/:articlename',function(req,res){
-   var articleName=req.params.articlename;
+ var articleName=req.params.articlename;
  res.send(htmlfunction(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
