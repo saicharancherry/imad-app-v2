@@ -7,15 +7,7 @@ var articles={
     heading:'article One',
     date:'sep 5 2017',
     content:`
-    <p>i am charan .this is my first webapp</p>
-    <p>i am charan .this is my first webapp</p>
-    <p>i am charan .this is my first webapp</p>
-    <p>i am charan .this is my first webapp</p>
-    <p>i am charan .this is my first webapp</p>
-    <p>i am charan .this is my first webapp</p>
-    <p>i am charan .this is my first webapp</p>
-    <p>i am charan .this is my first webapp</p>
-    <p>i am charan .this is my first webapp</p> `
+    <p>i am charan .this is my first webapp article one</p>`
    },
     'article-two' : {
     title:'article-two',
