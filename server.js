@@ -1,16 +1,16 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var articles={
-    articleone : {
+//var articles={
+  var  articleone = {
     title:'article-one',
     heading:'article One',
     date:'sep 5 2017',
     content:`
     <p>i am charan .this is my first webapp article one</p>`
-   },
+   };
    
-    'article-two' : {
+    /*'article-two' : {
     title:'article-two',
     heading:'article two2',
     date:'sep 15 2017',
@@ -26,7 +26,7 @@ var articles={
     content:`
     <h7><p>i am charan .this is my first webapp from article three</p></h7>`
    }
- };
+ };*/
 function htmlfunction(data)
 {
     var date=data.date;
@@ -64,7 +64,7 @@ app.get('/', function (req, res) {
 });
 app.get('/articleone',function(req,res){
    //var articleName=req.params.articlename;
- res.send(htmlfunction(articles[articleone]));
+ res.send(htmlfunction(articleone));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
