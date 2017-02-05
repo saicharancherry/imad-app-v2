@@ -9,6 +9,7 @@ var articles={
     content:`
     <p>i am charan .this is my first webapp article one</p>`
    },
+   
     'article-two' : {
     title:'article-two',
     heading:'article two2',
@@ -17,6 +18,7 @@ var articles={
     <p>i am charan .this is my first webapp article two</p>
     <h4><p>i am charan .this is my first webapp article two</p></h4> `
     },
+    
     'article-three' : {
     title:'article-three',
     heading:'article three',
@@ -61,12 +63,9 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/life1',function(req,res){
-    res.send('this is my life opened');
-});
 app.get('/:articlename',function(req,res){
    var articleName=req.params.articlename;
- res.send(htmlfunction(articles[articleName]));
+ res.send(htmlfunction(articles[article-two]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
