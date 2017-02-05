@@ -2,10 +2,10 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var content;
-var articleone={
+var articleone = {
     title:'article-one',
     heading:'article One',
-    date:'sep 5 2017',
+    date:'sep 5 2017'
     content:`
     <p>i am charan .this is my first webapp</p>
 <p>i am charan .this is my first webapp</p>
@@ -24,7 +24,7 @@ function htmlfunction(data)
     var content=data.content;
 var htmltemplate=`<html>
     <body>
-        <link href='/ui/style.css'/>
+        <link href='/ui/style.css' rel="stylesheet" />
         <div>
 <title>
 $(title)
@@ -40,7 +40,7 @@ $(title)
        <h3>awesome</h3>  
         </div>
        
-<h5><p>$(content)
+<h5><p> $(content)
 </div>
 </body>
 </html>`;
