@@ -47,9 +47,8 @@ ${title}
         ${date}
         </div>
         <div>
-       <h3>${heading}</h3>  
+        <h3>${heading}</h3>  
         </div>
-       
 <h5><p> ${content}
 </div>
 </body>
@@ -63,9 +62,9 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/:articlename',function(req,res){
-   var articleName=req.params.articlename;
- res.send(htmlfunction(articles[articleName]));
+app.get('/articleone',function(req,res){
+   //var articleName=req.params.articlename;
+ res.send(htmlfunction(articleone));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
