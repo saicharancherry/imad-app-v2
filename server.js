@@ -65,8 +65,8 @@ app.get('/life1',function(req,res){
     res.send('this is my life opened');
 });
 app.get('/:articlename',function(req,res){
-    var articleName=req.params.articlename;
- res.send(htmlfunction(htmlfunction(articles[article-one])));
+   var articleName=req.params.articlename;
+ res.send(htmlfunction(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
