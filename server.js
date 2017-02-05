@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var articles={
-    'article-one' : {
+    articleone : {
     title:'article-one',
     heading:'article One',
     date:'sep 5 2017',
@@ -25,7 +25,7 @@ var articles={
     date:'sep 65 2017',
     content:`
     <h7><p>i am charan .this is my first webapp from article three</p></h7>`
-   },
+   }
  };
 function htmlfunction(data)
 {
@@ -53,7 +53,7 @@ ${title}
 <h5><p> ${content}
 </div>
 </body>
-</html>`
+</html>`;
 return htmltemplate;
 
 }
@@ -65,7 +65,7 @@ app.get('/', function (req, res) {
 });
 app.get('/:articlename',function(req,res){
    var articleName=req.params.articlename;
- res.send(htmlfunction(articles[article-two]));
+ res.send(htmlfunction(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
