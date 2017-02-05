@@ -13,7 +13,7 @@ var articles={
     'article-two' : {
     title:'article-two',
     heading:'article two2',
-    date:'sep 15 2017',
+    date:'feb 15 2017',
     content:`
     <p>i am charan .this is my first webapp article two</p>
     <h4><p>i am charan .this is my first webapp article two</p></h4> `
