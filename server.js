@@ -55,7 +55,7 @@ ${title}
 </html>`;
 return htmltemplate;
 
-}
+};
 var app = express();
 app.use(morgan('combined'));
 
@@ -64,7 +64,7 @@ app.get('/', function (req, res) {
 });
 app.get('/articleone',function(req,res){
    //var articleName=req.params.articlename;
- res.send(htmlfunction(articleone));
+ res.send(htmlfunction(articles[articleone]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
