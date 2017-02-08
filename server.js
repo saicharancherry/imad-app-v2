@@ -63,6 +63,9 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
 app.get('/:articlename',function(req,res){
  var articleName=req.params.articlename;
  res.send(htmlfunction(articles[articleName]));
