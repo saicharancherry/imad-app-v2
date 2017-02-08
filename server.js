@@ -59,6 +59,7 @@ return htmltemplate;
 }
 var app = express();
 app.use(morgan('combined'));
+});
 var count=0;
 app.get('/counter',function(req,res){
     count=count+1;
