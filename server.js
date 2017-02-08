@@ -1,6 +1,8 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var app = express();
+app.use(morgan('combined'));
 var articles={
   'article-one' : {
     title:'article-one',
@@ -57,9 +59,6 @@ ${title}
 </html>`;
 return htmltemplate;
 }
-var app = express();
-app.use(morgan('combined'));
-});
 var count=0;
 app.get('/counter',function(req,res){
     count=count+1;
