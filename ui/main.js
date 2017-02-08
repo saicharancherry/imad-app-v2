@@ -7,7 +7,7 @@ textelement.onclick =function()
 function moveright()
 {
     moverightreal=moverightreal+10;
-    textelement.style.marginLeft='moverightreal'+'px';
+    textelement.style.marginLeft=moverightreal+'px';
 }
 var textelement=document.getElementById('textid');
 textelement.onclick=function(){
