@@ -14,3 +14,10 @@ var textelement=document.getElementById('textid');
 textelement.onclick=function(){
   var move=setInterval(moveright,50);  
 };
+var count=0;
+var button=document.getElementById('counter');
+button.onclick=function(){
+    count=count+1;
+    var span=document.getElementById('count');
+    span.innerHTML=count.toString();
+};
