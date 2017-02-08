@@ -4,6 +4,7 @@ textelement.onclick =function()
 {
     textelement.style.marginLeft='100px';
 };*/
+var moverightreal=0;
 function moveright()
 {
     moverightreal=moverightreal+10;
